@@ -37,6 +37,7 @@ parameters:
   values:
   - CI
   - Prerelease
+  - Release
 
   # The prerelease label. This value is only used if buildType is Prerelease.
 - name: prereleaseLabel
@@ -52,6 +53,12 @@ parameters:
 # Default name for the build, prior to build versioning
 # $(Build.BuildId) is the default value used when YAML cannot be parsed
 name: $(Build.BuildId)
+
+
+# Infrastructure variables
+variables:
+- group: Infrastructure
+- group: Infrastructure-Vault
 
 
 # Dependent resources
@@ -73,3 +80,4 @@ stages:
     project: Carpenter
     versionType: SemVer
     prereleaseLabel: ${{ parameters.prereleaseLabel }}
+    incrementVersionOnRelease: true
