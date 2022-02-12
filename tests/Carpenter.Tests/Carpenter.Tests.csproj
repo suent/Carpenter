@@ -5,7 +5,7 @@
 
     <IsPackable>false</IsPackable>
 
-    <AssemblyName>Nosnitor.Carpenter.Tests</AssemblyName>
+    <AssemblyName>Suent.Carpenter.Tests</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
