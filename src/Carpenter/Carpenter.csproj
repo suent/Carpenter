@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Suent.Carpenter</AssemblyName>
+    <RootNamespace>Suent.Carpenter</RootNamespace>
+    <PackageId>Carpenter</PackageId>
+    <Title>Carpenter</Title>
+    <AssemblyTitle>Carpenter Common Library</AssemblyTitle>
+    <Description>A cross-platform dotnet (.NET) build process helper.</Description>
+    <Product>Carpenter</Product>
+    <Copyright>Copyright © 2015-2022 Suent Networks</Copyright>
+    <VersionSuffix>dev</VersionSuffix>
+    <Company>Suent Networks</Company>
+    <PackageIcon>Carpenter-Icon_128x128.png</PackageIcon>
+    <PackageIconUrl>https://raw.githubusercontent.com/suent/carpenter/master/media/Carpenter-Icon_128x128.png</PackageIconUrl>
+    <Authors>Jeffrey Block</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/suent/carpenter</PackageProjectUrl>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Carpenter.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Include="..\..\media\Carpenter-Icon_128x128.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <Content Include="Build\Carpenter.targets">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <PackagePath>build/</PackagePath>
+    </Content>
+  </ItemGroup>
+  
+  <Import Project="Build\Carpenter.targets" />
+
+</Project>
