@@ -73,7 +73,7 @@ resources:
 
 # Use pipeline template
 stages:
-- template: template/carpenter-default.yml@Carpenter
+- template: templates/carpenter-default.yml@Carpenter
   parameters:
     pipelineVersion: 1
     buildType: ${{ parameters.buildType }}
