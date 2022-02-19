@@ -87,3 +87,8 @@ stages:
     prereleaseLabel: ${{ parameters.prereleaseLabel }}
     incrementVersionOnRelease: true
     buildDotNet: true
+    executeUnitTests: true
+    sonarCloud: true
+    sonarCloudOrganization: suent
+    sonarCloudProjectKey: Suent_Carpenter
+    sonarCloudServiceConnection: SonarCloudAnalysis1
