@@ -67,7 +67,7 @@ resources:
   # Carpenter is used for build/release pipeline.
   - repository: Carpenter
     type: github
-    name: suent/carpenter-azure-pipelines
+    name: suent/Carpenter.AzurePipelines
     endpoint: suent
     ref: refs/heads/stack/prod-us
 
