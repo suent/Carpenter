@@ -69,7 +69,7 @@ resources:
     type: github
     name: suent/carpenter-azure-pipelines
     endpoint: suent
-
+    ref: /refs/heads/stack/prod-us
 
 # Use pipeline template
 stages:
