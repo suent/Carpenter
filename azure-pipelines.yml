@@ -29,9 +29,9 @@
 
 
 parameters:
-  # The build type if a build is manually run. This value gets overridden by automated builds.
-- name: buildType
-  displayName: 'Build Type'
+  # The build purpose if a build is manually run. This value gets overridden by automated builds.
+- name: buildPurpose
+  displayName: 'Build Purpose'
   type: string
   default: CI
   values:
@@ -76,7 +76,7 @@ stages:
 - template: templates/carpenter-default.yml@Carpenter
   parameters:
     pipelineVersion: 1
-    buildType: ${{ parameters.buildType }}
+    buildPurpose: ${{ parameters.buildPurpose }}
     project: Carpenter
     defaultPoolType: Private
     defaultPoolName: Default
