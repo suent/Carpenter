@@ -82,6 +82,7 @@ namespace Carpenter.TargetsFiles
             {
                 xml.Load(reader);
             }
+            xml.ShouldNotBeNull();
         }
 
         [Theory]
@@ -98,6 +99,7 @@ namespace Carpenter.TargetsFiles
 
                 xml.Validate(null);
             }
+            xml.ShouldNotBeNull();
         }
     }
 }
