@@ -13,10 +13,10 @@
     <VersionSuffix>dev</VersionSuffix>
     <Company>Suent Networks</Company>
     <PackageIcon>Carpenter-Icon_128x128.png</PackageIcon>
-    <PackageIconUrl>https://raw.githubusercontent.com/suent/carpenter/master/media/Carpenter-Icon_128x128.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/suent/Carpenter/master/media/Carpenter-Icon_128x128.png</PackageIconUrl>
     <Authors>Jeffrey Block</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/suent/carpenter</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/suent/Carpenter</PackageProjectUrl>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Carpenter.snk</AssemblyOriginatorKeyFile>
